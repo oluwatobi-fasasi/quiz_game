@@ -9,7 +9,7 @@ const falseButton = document.getElementById('false');
 
 export default class QuestionHub {
     questionBank = [
-        "An atom is the smallest partic.",
+        "An atom is the smallest particle.",
         "Arachnophobia is the fear of bathing.",
         "Boiling water is 100 degrees Celsius.",
         "Butterflies taste things with their wings.",
