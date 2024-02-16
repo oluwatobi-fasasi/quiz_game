@@ -2,12 +2,14 @@ const questionSection = document.getElementById('question-section');
 const feedBack = document.getElementById('feedback');
 const trueButton = document.getElementById('true');
 const falseButton = document.getElementById('false');
+// const startButton = document.getElementById('start');
+
 
 
 
 export default class QuestionHub {
     questionBank = [
-        "An atom is the smallest particle.",
+        "An atom is the smallest partic.",
         "Arachnophobia is the fear of bathing.",
         "Boiling water is 100 degrees Celsius.",
         "Butterflies taste things with their wings.",
@@ -69,7 +71,6 @@ export default class QuestionHub {
 
     getQuestion() {
 
-        console.log('You just called me')
         if (this.index < this.questionBank.length) {
             const question = this.questionBank[this.index];
             questionSection.innerHTML = question;
@@ -97,6 +98,7 @@ export default class QuestionHub {
 
             trueButton.disabled = true;
             falseButton.disabled = true;
+            // startButton.style.display = 'block'
         }
     }
 }
